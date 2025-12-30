@@ -114,7 +114,7 @@ function App() {
             ➕ Ajouter
           </Button>
 
-          <InputGroup style={{ maxWidth: 870 }}>
+          <InputGroup style={{ maxWidth: 850 }}>
             <InputGroup.Text>🔍</InputGroup.Text>
             <Form.Control
               placeholder="Rechercher par nom..."
@@ -133,6 +133,7 @@ function App() {
           <Table responsive hover className="table-modern mb-0">
             <thead>
               <tr>
+                <th>#</th>
                 <th>Nom</th>
                 <th>Âge</th>
                 <th className="text-center">Actions</th>
@@ -148,6 +149,7 @@ function App() {
               ) : (
                 filteredPersons.map((p, i) => (
                   <tr key={p.id}>
+                    <td>{i + 1}</td>
                     <td>{p.nom}</td>
                     <td>{p.age}</td>
                     <td className="text-center">
