@@ -2,8 +2,6 @@
 
 Frontend web développé en **React** qui consomme un backend RESTful JAX-RS pour la gestion complète des personnes (CRUD + recherche).
 
-Ce projet fait partie d’un travail full-stack réalisé dans le cadre des TPs sur les services web REST avec JAX-RS (année universitaire 2025-2026).
-
 ## Fonctionnalités réalisées
 
 - Affichage dynamique de la liste des personnes dans un tableau responsive
