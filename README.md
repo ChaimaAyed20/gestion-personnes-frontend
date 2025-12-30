@@ -1,4 +1,4 @@
-# Gestion des Personnes – Frontend
+# Frontend Gestion Personnes
 
 Frontend web développé en **React** qui consomme un backend RESTful JAX-RS pour la gestion complète des personnes (CRUD + recherche).
 
