@@ -33,8 +33,7 @@ Le frontend communique **exclusivement** via des requêtes HTTP avec le backend 
 Aucun accès direct à la base de données.
 
 **Backend correspondant** :  
-🔗 [https://github.com/ton-username/gestion-personnes-backend](https://github.com/ton-username/gestion-personnes-backend)  
-(À remplacer par ton vrai lien)
+🔗 https://github.com/ChaimaAyed20/gestion-personnes-backend
 
 ## Installation & Lancement
 
