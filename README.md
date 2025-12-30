@@ -1,16 +1,45 @@
-# React + Vite
+# Gestion des Personnes – Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Frontend web développé en **React** qui consomme un backend RESTful JAX-RS pour la gestion complète des personnes (CRUD + recherche).
 
-Currently, two official plugins are available:
+Ce projet fait partie d’un travail full-stack réalisé dans le cadre des TPs sur les services web REST avec JAX-RS (année universitaire 2025-2026).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Fonctionnalités réalisées
 
-## React Compiler
+- Affichage dynamique de la liste des personnes dans un tableau responsive
+- Ajout d’une personne via modal avec validation des champs
+- Modification d’une personne (modal pré-remplie)
+- Suppression avec confirmation
+- Recherche en temps réel par nom
+- Compteur total de personnes
+- Design moderne dark mode avec effet glassmorphism et glow
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technologies utilisées
 
-## Expanding the ESLint configuration
+- **React 18** + **Vite** (build tool rapide)
+- **Bootstrap 5** + **react-bootstrap** (UI responsive et modals)
+- **Axios** (appels HTTP vers le backend REST)
+- CSS personnalisé (`AppTheme.css`) pour le thème sombre, gradients, blur et ombres
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Communication avec le backend REST
+
+Le frontend communique **exclusivement** via des requêtes HTTP avec le backend JAX-RS déployé sur Tomcat (port 8082) :
+
+- `GET  /rest/personnes` → liste
+- `PUT  /rest/personnes/add/{nom}/{age}` → ajout
+- `PUT  /rest/personnes/update/{id}/{nom}/{age}` → modification
+- `DELETE /rest/personnes/remove/{id}` → suppression
+
+Aucun accès direct à la base de données.
+
+**Backend correspondant** :  
+🔗 [https://github.com/ton-username/gestion-personnes-backend](https://github.com/ton-username/gestion-personnes-backend)  
+(À remplacer par ton vrai lien)
+
+## Installation & Lancement
+
+```bash
+git clone https://github.com/ton-username/gestion-personnes-frontend.git
+cd gestion-personnes-frontend
+npm install
+npm run dev
